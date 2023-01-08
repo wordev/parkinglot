@@ -1,0 +1,13 @@
+version: "3.1"
+
+services:
+  db-postgres:
+    container_name: postgres_demo
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=db
+      - PGDATA=/data/postgres
+    ports:
+      - "5432:5432"

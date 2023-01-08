@@ -9,14 +9,14 @@ services:
       - 8000:8000
     links:
       - db-postgres
-    command: sh -c "npm run db:migrate"
+    # command: sh -c "npm run db:migrate"
     environment:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=db
       - SERVICE_PORT=8000
       - DB_PORT=5432
-      - DDB_HOST=db-postgres
+      - DB_HOST=db-postgres
       - PGDATA=/data/postgres
     depends_on:
       - db-postgres
