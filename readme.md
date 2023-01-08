@@ -15,30 +15,38 @@ when you create the parking lots. Assume that the small size is near the entry.
 ## ER Diagram
 ![alt text](https://github.com/wordev/parkinglot/blob/master/src/pic/er_diagram.png?raw=true)
 
+
+
+## How to Unit test
 ```bash
-pip install foobar
+npm install 
+npm run test
+```
+Or See below
+![alt text](https://github.com/wordev/parkinglot/blob/master/src/pic/unit_test.png?raw=true)
+
+## How to run services
+```bash
+docker-compose up -d
+```
+If you start services successfully, you can download Postman from the link below, which can help you to play.
+
+Postman
+https://drive.google.com/file/d/1_SpzWkYAf4jAijHHe3F57wWcCvtcekHv/view?usp=share_link
+
+For Service will be start at port 8000
+
+For Connect to PostgresDB
+
+```bash
+host: localhost
+port: 5432
+username: admin
+password: password
+databasename: db
 ```
 
-## Usage
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-
-xxx
-
-Please make sure to update tests as appropriate.
 
 ## Reference
 
