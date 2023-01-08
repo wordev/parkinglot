@@ -46,7 +46,13 @@ password: password
 databasename: db
 ```
 
+## Sequence Diagram if using Redis
+![alt text](https://github.com/wordev/parkinglot/blob/master/src/pic/sequence-diagram.jpg?raw=true)
 
+## In the future
+- Calculate Parking fee
+- Summary Monthly Parking fee
+- Use Redis For Cache Data
 
 ## Reference
 
