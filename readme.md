@@ -17,7 +17,7 @@ when you create the parking lots. Assume that the small size is near the entry.
 
 
 
-## How to Unit test
+## How to run Unit test
 ```bash
 npm install 
 npm run test
